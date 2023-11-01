@@ -1,3 +1,4 @@
+#Asrith Yerramesetty
 def password_encoder(encoder_string):
     password_format = list(encoder_string)
     new_list = []
@@ -10,7 +11,16 @@ def password_encoder(encoder_string):
 
     return(string_password)
 
+def decoded(digit):
+    format = list(digit)
+    newv = []
+    for n in range(0, len(format)):
+        psd = (int(format[n]) - 3) % 10
+        newv.append(str(psd))
 
+    create = ''.join(newv)
+
+    return (create)
 def main():
     print("Menu")
     print("-------------")
